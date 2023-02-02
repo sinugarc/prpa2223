@@ -1,10 +1,12 @@
 from multiprocessing import Process
 from multiprocessing import current_process
 from multiprocessing import Value
-def ft(c):
-    for i in range(1080):
+
+def f(c):
+    for i in range(100):
         c.value = c.value + 1
-        print (f"hola soy {current_process().pid}, vuelta: {i}, contador: {c.val        ue}")
+        print (f"hola soy {current_process().pid}, vuelta: {i}, contador: 
+{c.value}")
 def g():
     print ("adios")
 if __name__ == "__main__":
