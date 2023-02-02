@@ -5,8 +5,8 @@ from multiprocesing import Process
 
 def f(value):
     for i in range(3):
-        print ("hola soy {value} vuelta {i})
-        time.sleep(random.random()/3")
+        print ("hola soy {value} vuelta {i}")
+        time.sleep(random.random()/3)
 def g():
     print ("adios")
 
